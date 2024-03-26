@@ -1,0 +1,17 @@
+blinker
+click
+colorama
+dominate
+Flask
+Flask-Bootstrap
+Flask-SQLAlchemy
+Flask-WTF
+greenlet
+itsdangerous
+Jinja2
+MarkupSafe
+SQLAlchemy
+typing_extensions
+visitor
+Werkzeug
+WTForms

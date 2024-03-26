@@ -5,12 +5,13 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, FloatField
 from wtforms.validators import DataRequired
 import requests
+import os
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ["SECRET_KEY"]
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///movies.db"
-API_KEY = "d03f7167c7b48d9067b7ec865f41bfc0"
+API_KEY = os.environ["API_KEY"]
 
 Bootstrap(app)
 app.app_context().push()
