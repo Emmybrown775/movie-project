@@ -16,3 +16,4 @@ visitor
 Werkzeug
 WTForms
 gunicorn
+requests
